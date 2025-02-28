@@ -17,7 +17,7 @@ The format of the training data used for breast cancer detection depended on the
 ## 3. Amount of Training Data Typically Used
 
 The amount of training data used varied depending on the complexity of the model and the nature of the problem. For breast cancer detection:
-- **Small to Medium-sized Datasets**: Datasets like the one used in this study typically contained thousands of labeled images, which were used in academic studies and competitions. For example, the "BreakHis" dataset was found to contain over 7000 images across benign and malignant categories.
+- **Small to Medium-sized Datasets**: Datasets like the one used in this study typically contained thousands of labeled images, which were used in academic studies and competitions. For example, the "BreakHis" dataset was found to contain over 9000 images across benign and malignant categories.
 - **Transfer Learning**: Pre-trained models like DenseNet worked well even with smaller datasets when their weights were fine-tuned. This allowed the model to leverage knowledge from large datasets like ImageNet.
 
 ## 4. Pretrained Models for Breast Cancer Detection
@@ -30,3 +30,14 @@ Pretrained models played a crucial role in the success of machine learning model
 ## Summary of Literature Review
 
 In the domain of breast cancer detection using deep learning, **CNN-based models** like **DenseNet** were commonly used for binary classification tasks such as distinguishing between benign and malignant tumors. The training data typically consisted of labeled image data (usually in formats such as PNG), and various data augmentation techniques were applied to improve model generalization. **Pretrained models**, especially **DenseNet**, **ResNet**, and **VGG**, were frequently employed for transfer learning, improving performance even with smaller datasets. These approaches were validated through a variety of medical imaging datasets and achieved remarkable results in breast cancer classification tasks.
+
+### Source 1: **A deep fusion-based vision transformer for breast cancer classification**
+- **Objective**: This paper focuses on the use of a deep fusion-based Vision Transformer (ViT) for breast cancer classification. The goal is to explore how vision transformers can improve classification accuracy when compared to traditional CNN models.
+- **Methods**: The authors proposed a fusion-based approach where the Vision Transformer (ViT) was used alongside other deep learning models to enhance classification performance. The ViT model was trained on histopathological images and mammogram data, and the results were compared to other standard CNN models such as ResNet and DenseNet.
+- **Outcomes**: The proposed ViT model demonstrated superior performance in terms of classification accuracy and AUC when compared to traditional convolutional neural networks. The model achieved an AUC score of 0.93 and outperformed DenseNet in terms of both accuracy and generalization.
+
+### Source 2: **Breast Cancer Detection with Machine Learning**
+
+- **Objective**: This paper explores the application of machine learning models for detecting breast cancer from mammogram images. It focuses on comparing various traditional machine learning algorithms such as Support Vector Machines (SVM), Random Forests, and K-Nearest Neighbors (KNN) for breast cancer classification tasks.
+- **Methods**: A dataset containing mammogram images and associated labels for benign and malignant tumors was used. Various machine learning algorithms were applied, and their performances were evaluated based on accuracy, precision, and recall. The paper also explored feature selection methods to improve the models' performance.
+- **Outcomes**: The study found that traditional machine learning models, while effective, did not outperform deep learning models in terms of accuracy. However, the Random Forest model achieved an accuracy of 87% and was particularly useful when combined with feature selection techniques. The paper concluded that while machine learning methods are useful, deep learning models such as CNNs and ViT models showed better overall results for breast cancer detection.
