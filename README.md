@@ -1,4 +1,4 @@
-# Breast Cancer Classification
+# Automatic Diagnosis of Breast Cancer | IUSS 23-24
 
 ## Repository Link
 [[https://github.com/imranrahman1997/Automatic-Diagnosis-of-Breast-Cancer/tree/main))
