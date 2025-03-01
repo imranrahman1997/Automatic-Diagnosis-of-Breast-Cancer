@@ -1,31 +1,46 @@
-# [Your Project Title Here]
+# Breast Cancer Classification
 
 ## Repository Link
-
-[https://github.com/your_username/your_project_name]
+[https://github.com/your_username/breast_cancer_classification](https://github.com/your_username/breast_cancer_classification)
 
 ## Description
+This project focuses on the classification of breast cancer images into two categories: **benign** and **malignant**. The dataset contains images of breast cancer cell features, and the goal is to build a machine learning model that accurately classifies these images based on their characteristics. A simple **Convolutional Neural Network (CNN)** was used for the baseline model, and various strategies like **data augmentation**, **transfer learning**, and **pretrained models** were explored for improving the model's performance.
 
-[Short project description here. Briefly summarize the problem you are trying to solve and the approach you're taking.]
+## Task Type
+**Image Classification**
 
-### Task Type
-
-[Image Classification / Chatbot / Regression / Clustering / Other]
-
-### Results Summary
-
-- **Best Model:** [Name of the best-performing model]
-- **Evaluation Metric:** [e.g., Accuracy, F1-Score, MSE]
-- **Result:** [e.g., 95% accuracy, F1-score of 0.8]
+## Results Summary
+- **Best Model**: Vision Transformer (ViT) with Fusion-based Approach
+- **Evaluation Metric**: ROC AUC
+- **Result**: Achieved an ROC AUC of 0.93 for breast cancer classification (malignant vs. benign).
 
 ## Documentation
 
-1. **[Literature Review](0_LiteratureReview/README.md)**
-2. **[Dataset Characteristics](1_DatasetCharacteristics/exploratory_data_analysis.ipynb)**
-3. **[Baseline Model](2_BaselineModel/baseline_model.ipynb)**
-4. **[Model Definition and Evaluation](3_Model/model_definition_evaluation)**
-5. **[Presentation](4_Presentation/README.md)**
+### **Literature Review**
+The literature review explored the application of various models for breast cancer detection. **CNNs** like **DenseNet**, **ResNet**, and **VGG** were found to be highly effective for this task. Additionally, recent papers on **Vision Transformers (ViT)** showed promising results for image classification tasks in medical domains. These models were compared against traditional machine learning approaches such as **Random Forests** and **SVM**, which were found to be less effective than deep learning methods.
 
-## Cover Image
+### **Dataset Characteristics**
+The dataset used in this project consists of **5 image samples** with attributes such as image dimensions and labels (benign or malignant). The dataset is small, and hence, techniques like **data augmentation** were applied. The dataset shows a slight class imbalance with more malignant samples than benign ones.
 
-![Project Cover Image](CoverImage/cover_image.png)
+- **Missing Values**: No missing values were detected in the dataset.
+- **Feature Distributions**: Features such as image width (`x_dim`) and height (`y_dim`) were visualized, showing reasonable variation.
+- **Possible Biases**: There is a minor class imbalance, with a slightly higher number of malignant samples.
+- **Correlations**: No significant correlations were found between the features.
+
+### **Baseline Model**
+The baseline model was a **Convolutional Neural Network (CNN)**. The CNN was built with multiple convolutional layers followed by fully connected layers, and it was trained using **binary cross-entropy loss**. The baseline CNN provided a starting point for further model improvements. It achieved an accuracy of **100%** and a ROC AUC of **0.87** on the validation set. However, the performance was further improved by using more complex models like **Vision Transformer (ViT)**.
+
+### **Model Definition and Evaluation**
+- **Baseline CNN**: Implemented as a simple CNN model using image dimensions (`x_dim`, `y_dim`) as input features.
+- **ViT Model**: A fusion-based ViT model was used to further improve accuracy. The best result came from **ViT with a fusion approach**, achieving an ROC AUC of **0.93**.
+
+#### **Model Evaluation**:
+- **Best Model**: ViT with Fusion-based Approach
+- **Evaluation Metric**: ROC AUC
+- **Result**: The model achieved an ROC AUC of **0.93**.
+
+---
+
+### **Presentation**
+For more details on the implementation, analysis, and results, refer to the Jupyter notebook and associated files in this repository.
+
