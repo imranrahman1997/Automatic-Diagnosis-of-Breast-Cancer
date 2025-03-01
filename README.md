@@ -1,7 +1,7 @@
 # Breast Cancer Classification
 
 ## Repository Link
-[[https://github.com/your_username/breast_cancer_classification](https://github.com/your_username/breast_cancer_classification](https://github.com/imranrahman1997/Automatic-Diagnosis-of-Breast-Cancer))
+[[https://github.com/imranrahman1997/Automatic-Diagnosis-of-Breast-Cancer/tree/main))
 
 ## Description
 This project focuses on the classification of breast cancer images into two categories: **benign** and **malignant**. The dataset contains images of breast cancer cell features, and the goal is to build a machine learning model that accurately classifies these images based on their characteristics. A simple **Convolutional Neural Network (CNN)** was used for the baseline model, and various strategies like **data augmentation**, **transfer learning**, and **pretrained models** were explored for improving the model's performance.
