@@ -20,7 +20,7 @@ This project focuses on the classification of breast cancer images into two cate
 The literature review explored the application of various models for breast cancer detection. **CNNs** like **DenseNet**, **ResNet**, and **VGG** were found to be highly effective for this task. Additionally, recent papers on **Vision Transformers (ViT)** showed promising results for image classification tasks in medical domains. 
 
 ### **Dataset Characteristics**
-The dataset used in this project consists of **5 image samples** with attributes such as image dimensions and labels (benign or malignant). The dataset is small, and hence, techniques like **data augmentation** were applied. The dataset shows a slight class imbalance with more malignant samples than benign ones.
+The dataset used in this project consists of **total 1112 data** with attributes such as image dimensions and labels (benign or malignant). The dataset is small, and hence, techniques like **data augmentation** were applied. The dataset shows a slight class imbalance with more malignant samples than benign ones.
 
 - **Missing Values**: No missing values were detected in the dataset.
 - **Feature Distributions**: Features such as image width (`x_dim`) and height (`y_dim`) were visualized, showing reasonable variation.
