@@ -44,3 +44,6 @@ The baseline model was a **Convolutional Neural Network (CNN)**. The CNN was bui
 ### **Presentation**
 For more details on the implementation, analysis, and results, refer to the Jupyter notebook and associated files in this repository.
 
+## Cover Image
+
+![Project Cover Image](CoverImage/kaggle_48195_logos_header.png)
